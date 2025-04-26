@@ -1,0 +1,71 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+
+   
+    /*transition*/
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    transition: top 0.8s;
+    z-index: 1;
+
+    background: rgba(212, 201, 201, 0.596);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+/*navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav img{
+    margin: 10px;
+    width: 100px;
+    filter: invert(100%);
+    max-height: 12vh;
+    
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Montserrat Classic';
+    text-transform: capitalize;
+}
+
+nav ul li a::after{
+    
+    content: '';
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    
+    border-radius: 20%;
+    transition: 0.5s;
+    
+    
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}

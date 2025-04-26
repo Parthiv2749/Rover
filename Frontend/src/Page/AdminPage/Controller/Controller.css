@@ -1,0 +1,175 @@
+/* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 15vh;
+}
+
+.control-panel, .telemetry-dashboard, .video-feed {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.control-panel, .telemetry-dashboard {
+    flex: 1 1 300px;
+}
+
+.video-feed {
+    flex: 2 1 600px;
+    text-align: center;
+}
+
+/* Directional Buttons Layout */
+.direction-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.control-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #e0f7fa;
+    border: none;
+    border-radius: 5px;
+    color: #004d40;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.control-btn:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.speed-control {
+    margin-top: 20px;
+}
+
+.emergency-stop {
+    margin-top: 15px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* Map Styles */
+.map-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+/* #map {
+    width: 100%;
+    height: 100%;
+} */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-feed {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .control-panel, .telemetry-dashboard {
+        flex: 1 1 100%;
+    }
+
+    .control-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .control-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .speed-control label, .telemetry-dashboard p {
+        font-size: 0.9em;
+    }
+
+    .navbar button {
+        padding: 8px 10px;
+    }
+
+    .emergency-stop {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
+

@@ -1,0 +1,16 @@
+.MapView{
+ padding-top: 15vh;
+ background-color: aliceblue;
+ min-height: 100vh;
+   
+}
+.RoverFea{
+    /* background-color: aqua; */
+    margin-top: 8px;
+}
+.Run_Rover_Btn, .Get_route{
+    /* height: 48px; */
+    font-size: 24px;
+    padding: 4px;
+    /* margin-top: 2px; */
+}
